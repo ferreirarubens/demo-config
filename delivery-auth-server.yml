@@ -32,7 +32,7 @@ spring:
         url: jdbc:mysql://localhost/oauth
         username: root
     jpa:
-        database-platform: org.hibernate.dialect.MySQLDialect
+        database: MYSQL
         generate-ddl: false
         hibernate:
-            ddl-auto: create
+            ddl-auto: create-drop
