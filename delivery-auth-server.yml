@@ -36,4 +36,3 @@ spring:
         generate-ddl: false
         hibernate:
             ddl-auto: create
-        show-sql: true
