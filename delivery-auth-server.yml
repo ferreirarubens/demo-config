@@ -22,7 +22,7 @@ security:
             refresh-token-validity-seconds: 1800
             authorized-grant-types: password,autorization_code,refresh_token
             client-id: coderef
-            client-secret: secret
+            client-secret: $2a$04$e/c1/RfsWuThaWFCrcCuJeoyvwCV0URN/6Pn9ZFlrtIWaU/vj/BfG
             resource-ids: resources
             scope: bar,read,write
         resource:
