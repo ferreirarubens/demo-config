@@ -14,7 +14,7 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 
 spring:
-   datasource:
+    datasource:
         driver-class-name: org.postgresql.Driver
         platform: postgres
         url: jdbc:postgresql://localhost:5432/oauth
