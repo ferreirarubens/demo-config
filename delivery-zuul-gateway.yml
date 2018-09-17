@@ -1,0 +1,10 @@
+server:
+  port: 80
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://delivery-eureka-server:80/eureka/
+  instance:
+    hostname: delivery-zuul-gateway
+    home-page-url: http://${eureka.instance.hostname}:${server.port}/
