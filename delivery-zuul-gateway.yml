@@ -4,7 +4,7 @@ eureka:
   client:
     enabled: true
     service-url:
-      defaultZone: http://delivery-eureka-server:80/eureka/
+      defaultZone: http://localhost:9091/eureka/
   instance:
     hostname: delivery-zuul-gateway
     home-page-url: http://${eureka.instance.hostname}:${server.port}/
