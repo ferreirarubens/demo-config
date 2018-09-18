@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: zuul-gateway
     port: 9091
     home-page-url:http://${eureka.instance.hostname}:${server.port}/
   client:
