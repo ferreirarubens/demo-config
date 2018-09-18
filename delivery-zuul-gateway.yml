@@ -26,3 +26,9 @@ security:
     enabled: false
   user:
     password: none
+
+zuul:
+  routes:
+    auth-server:
+      path: /auth-server/**
+      stripPrefix: false
