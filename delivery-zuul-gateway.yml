@@ -4,7 +4,7 @@ server:
 eureka:
   instance:
     hostname: zuul-gateway
-    home-page-url:http://${eureka.instance.hostname}:${server.port}/
+    home-page-url: http://${eureka.instance.hostname}:${server.port}/
   client:
     enable: true
     registerWithEureka: true
