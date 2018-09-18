@@ -27,9 +27,3 @@ security:
   user:
     password: none
 
-zuul:
-  routes:
-    auth:
-      path: /auth-server/**
-      stripPrefix: false
-      sensitiveHeaders:
