@@ -5,6 +5,13 @@ spring:
 server:
   port: 80
 
+zuul:
+  routes:
+    auth:
+      path: /auth/**
+      service-id: auth-server
+      sensitiveHeaders:
+      
 eureka:
   instance:
     hostname: localhost
