@@ -3,13 +3,13 @@ server:
 
 eureka:
   instance:
-    hostname: zuul-gateway
+    hostname: localhost
     home-page-url: http://${eureka.instance.hostname}:${server.port}/
   client:
     enable: true
     registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://eureka-server:9091/eureka/
+      defaultZone: http://${eureka.instance.hostname}:9091/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
