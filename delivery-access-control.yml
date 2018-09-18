@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: access-control
+
 server:
   port: 9094
 
