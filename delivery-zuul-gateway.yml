@@ -20,6 +20,11 @@ eureka:
 management:
   security:
     enabled: false
+  endpoint:
+    routes:
+      enabled: true
+    filters:
+      enabled: true
 security:
   # Disable Spring Boot basic authentication
   basic:
