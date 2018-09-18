@@ -5,7 +5,9 @@ eureka:
   instance:
     hostname: localhost
     port: 9091
+    home-page-url:http://${eureka.instance.hostname}:${server.port}/
   client:
+    enable: true
     registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
