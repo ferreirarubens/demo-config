@@ -24,3 +24,5 @@ security:
   # Disable Spring Boot basic authentication
   basic:
     enabled: false
+  user:
+    password: none
