@@ -12,7 +12,7 @@ eureka:
   client:
     enable: true
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:9091/eureka/
   server:
