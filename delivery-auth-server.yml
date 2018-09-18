@@ -13,6 +13,8 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 
 security:
+    basic:
+      enabled: false
     oauth2:
         token-store:
             key: storeToken

@@ -27,3 +27,16 @@ security:
   user:
     password: none
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+#Ribbon time out
+auth-server:
+  ribbon:
+    ReadTimeout: 70000
+
