@@ -21,6 +21,6 @@ management:
       enabled: true
     web:
       exposure:
-        include: *
+        include: "*"
     filters:
       enabled: true
