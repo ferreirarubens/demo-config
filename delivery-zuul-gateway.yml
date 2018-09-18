@@ -21,7 +21,6 @@ management:
   security:
     enabled: false
 security:
-  # Disable Spring Boot basic authentication
   basic:
     enabled: false
   user:
