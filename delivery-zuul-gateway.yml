@@ -16,3 +16,11 @@ eureka:
 management:
   security:
     enabled: false
+  endpoints:
+    routes:
+      enabled: true
+    web:
+      exposure:
+        include: *
+    filters:
+      enabled: true
