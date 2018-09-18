@@ -29,6 +29,7 @@ security:
 
 zuul:
   routes:
-    auth-server:
+    auth:
       path: /auth-server/**
       stripPrefix: false
+      sensitiveHeaders:
