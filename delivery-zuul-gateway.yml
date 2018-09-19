@@ -45,7 +45,8 @@ auth-server:
     
 zuul:
   routes:
-    auth-server:
-      path: /auth-server/**
+    auth:
+      path: /auth/**
+      sensitiveHeaders:
       serviceId: auth-server
 
