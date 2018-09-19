@@ -41,17 +41,3 @@ security:
 auth-server:
   ribbon:
     ReadTimeout: 140000
-    
-    
-zuul:
-  routes:
-    auth:
-      path: /auth-server/**
-      serviceId: auth-server
-    order:
-      path: /order-service/**
-      serviceId: order-service
-    access:
-      path: /access-control/**
-      serviceId: access-control
-
