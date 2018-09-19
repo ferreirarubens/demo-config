@@ -47,14 +47,11 @@ zuul:
   routes:
     auth:
       path: /auth-server/**
-      sensitiveHeaders:
       serviceId: auth-server
     order:
       path: /order-service/**
-      sensitiveHeaders:
       serviceId: order-service
     access:
       path: /access-control/**
-      sensitiveHeaders:
       serviceId: access-control
 
