@@ -36,8 +36,8 @@ spring:
         driver-class-name: org.postgresql.Driver
         platform: postgres
         url: jdbc:postgresql://localhost:5432/ferreira
-        username: root
-        password: root
+        username: postgres
+        password: postgres
     jpa:
         database: POSTGRESQL
         database-platform: org.hibernate.dialect.PostgreSQL9Dialect
