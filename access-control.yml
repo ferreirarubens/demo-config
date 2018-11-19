@@ -1,0 +1,40 @@
+server:
+  port: 9094
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:9091/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+    application:
+        name: access-control
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        platform: postgres
+        url: jdbc:postgresql://localhost:5432/oauth
+        username: postgres
+        password: postgres
+    jpa:
+        database: POSTGRESQL
+        database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+        generate-ddl: false
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                temp:
+                    use_jdbc_metadata_defaults: false
+
+authserver:
+  hostname: http://localhost:9092
+security:
+  oauth2:
+    resource:
+      userInfoUri: ${authserver.hostname}/user
