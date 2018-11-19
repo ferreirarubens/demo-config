@@ -35,7 +35,7 @@ spring:
     datasource:
         driver-class-name: org.postgresql.Driver
         platform: postgres
-        url: jdbc:postgresql://localhost:5432/oauth
+        url: jdbc:postgresql://localhost:5432/ferreira
         username: postgres
         password: postgres
     jpa:
