@@ -19,8 +19,8 @@ security:
         token-store:
             key: storeToken
         client:
-            access-token-validity-seconds: 1800
-            refresh-token-validity-seconds: 1800
+            access-token-validity-seconds: 60
+            refresh-token-validity-seconds: 120
             authorized-grant-types: password,autorization_code,refresh_token
             client-id: coderef
             client-secret: secret
