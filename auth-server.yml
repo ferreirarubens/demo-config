@@ -25,7 +25,7 @@ security:
             client-id: coderef
             client-secret: secret
             resource-ids: resources
-            scope: bar,read,write
+            scope: read,write
         resource:
             filter-order: 3
 
