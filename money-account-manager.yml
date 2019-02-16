@@ -14,11 +14,11 @@ eureka:
 
 spring:
     application:
-        name: order-service
+        name: money-account-manager
     datasource:
         driver-class-name: org.postgresql.Driver
         platform: postgres
-        url: jdbc:postgresql://localhost:5432/ferreira
+        url: jdbc:postgresql://localhost:5432/account-manager
         username: postgres
         password: postgres
     jpa:
