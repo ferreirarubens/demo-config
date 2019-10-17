@@ -31,7 +31,7 @@ security:
 
 spring:
     application:
-        name: auth-server
+        name: auth
     datasource:
         driver-class-name: org.postgresql.Driver
         platform: postgres
