@@ -32,9 +32,9 @@ spring:
                 temp:
                     use_jdbc_metadata_defaults: false
 
-authserver:
+auth:
   hostname: http://localhost:9092
 security:
   oauth2:
     resource:
-      userInfoUri: ${authserver.hostname}/user
+      userInfoUri: ${auth.hostname}/user
