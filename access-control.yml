@@ -20,7 +20,7 @@ spring:
         platform: postgres
         url: jdbc:postgresql://localhost:5432/ferreira
         username: postgres
-        password: postgres
+        password: bf@postgres
     jpa:
         database: POSTGRESQL
         database-platform: org.hibernate.dialect.PostgreSQL9Dialect
