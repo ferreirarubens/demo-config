@@ -38,3 +38,6 @@ security:
   oauth2:
     resource:
       userInfoUri: ${auth-server.hostname}/user
+
+liquibase:
+  change-log=classpath:db/changelog/db.changelog-master.xml
