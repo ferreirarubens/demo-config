@@ -32,7 +32,6 @@ spring:
         temp:
           use_jdbc_metadata_defaults: false
   liquibase:
-    liquibase-schema: access_control
     change-log: classpath:db/changelog/db.changelog-master.yaml
     enabled: true
 
