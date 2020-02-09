@@ -33,6 +33,8 @@ spring:
           use_jdbc_metadata_defaults: false
   liquibase:
     default-schema: access_control
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    enabled: true
 
 auth-server:
   hostname: http://localhost:9092
@@ -40,8 +42,3 @@ security:
   oauth2:
     resource:
       userInfoUri: ${auth-server.hostname}/user
-
-liquibase:
-  change-log: classpath:db/changelog/db.changelog-master.yaml
-  enabled: true
-  default-schema: access_control
