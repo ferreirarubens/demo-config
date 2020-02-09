@@ -31,6 +31,8 @@ spring:
             hibernate:
                 temp:
                     use_jdbc_metadata_defaults: false
+    liquibase:
+      default-schema: access_control
 
 auth-server:
   hostname: http://localhost:9092
